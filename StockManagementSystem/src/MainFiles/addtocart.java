@@ -160,7 +160,7 @@ public class addtocart extends javax.swing.JFrame {
       //   ProductInformation.categoryChooser = "electronics";
         try {
             Class.forName("java.sql.DriverManager");
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/fs", "root", "");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/java_stock", "root", "");
 
             Statement stmt = con.createStatement();
             String query = "select * from cart ";

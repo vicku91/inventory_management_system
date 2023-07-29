@@ -149,7 +149,7 @@ public class supplierapprove extends javax.swing.JFrame {
       //   ProductInformation.categoryChooser = "electronics";
         try {
             Class.forName("java.sql.DriverManager");
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/fs", "root", "");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/java_stock", "root", "");
 
             Statement stmt = con.createStatement();
             String query = "select * from purchase ";
@@ -218,7 +218,7 @@ this.setVisible(false);
          try{
              
         Class.forName("com.mysql.jdbc.Driver");
-       c=DriverManager.getConnection("jdbc:mysql://localhost/fs","root","");
+       c=DriverManager.getConnection("jdbc:mysql://localhost/java_stock","root","");
        s=c.createStatement();
 
   DefaultTableModel model = (DefaultTableModel) table2.getModel();   
